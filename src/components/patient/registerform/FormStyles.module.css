@@ -188,6 +188,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.loading_spinner > * {
+   max-width: 30px;
+   max-height: 30px;
+} 
+
+
 .button {
   display: block;
   background-color: #dcdada;

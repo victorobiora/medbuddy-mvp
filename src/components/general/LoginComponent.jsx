@@ -116,8 +116,6 @@ const LoginComponent = (props) => {
         <div className={styles.loading_spinner}>
           <TailSpin
             color="#066dfe"
-            height="30"
-            width="30"
             ariaLabel="tail-spin-loading"
             visible={true}
           />
