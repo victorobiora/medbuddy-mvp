@@ -91,10 +91,11 @@ const LoginComponent = (props) => {
 
         const response = await registerRequest.json();
         console.log(response);
+        console.log(response.data.data.token)
 
    dispatch(tokenActions.updateToken(response.data.data.token))
         //Navigate to the regComplete page upon completion
-        if(data.data.user.role === 2) {
+        if(response.data.data.user.role === 2) {
           router.push("/patient/home");
         }else {
           router.push('/healthcareprovider/home')
